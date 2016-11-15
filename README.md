@@ -4,14 +4,14 @@ Source: https://coderwall.com/p/x0fqmw/run-scripts-on-linux-ubuntu-every-few-sec
 With Cron you can run php scripts every minute but not in shorter period of time. So what can you do when you need to run your script every 15 seconds or even 1 second ?
 
 Create shell sctipt like this one fasterthancron.sh
-'
+```
 #!/bin/bash
 #This script run every 15 seconds
 while (sleep 15 && php /path_to_script/faster_than_cron.php) &
 do
   wait $!
 done
-'
+```
 Make this file executable. This script is improved thanks to becreative-germany - see comments.
 
 $sudo chmod +x /path_to/faster_than_cron.sh
