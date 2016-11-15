@@ -17,7 +17,7 @@ Make this file executable.
 $sudo chmod +x /path_to/faster_than_cron.sh
 ```
 
-Now this script need to be run by system when it boots, so lets change some linux files now. File /etc/rc.local is starting with system, so we can add additionsl scripts it can run. Lets edit this file now.
+Now this script need to be run by system when it boots, so lets change some linux files now. File `/etc/rc.local` is starting with system, so we can add additionsl scripts it can run. Lets edit this file now.
 
 ```
 $sudo nano /etc/rc.local
